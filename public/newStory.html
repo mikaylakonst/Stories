@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Story</title>
+	<script src="/__/firebase/4.3.0/firebase.js"></script>
+    <script src="newStory.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+	<p id="welcome"></p>
+	<div class="topnav">
+		<a href="inbox.html">Inbox</a>
+		<a href="newStory.html">New Story</a>
+		<a href="stories.html">Published Stories</a>
+		<a href="index.html">Log out</a>
+	</div>
+	<h1>Start a Story!</h1>
+	<input id="title" type="text" placeholder="Title"></input>
+	<br><br>
+	<textarea id="text" rows="10" cols="50" placeholder="How does this story start?"></textarea>
+	<br><br>
+	<select id="dropdown">
+		<option value="" selected disabled hidden>Who should continue the story?</option>
+	</select>
+	<button onclick="send()">Send!</button>
+	<p id="error"></p>
+</body>
+</html>
