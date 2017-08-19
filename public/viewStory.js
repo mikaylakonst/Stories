@@ -45,8 +45,9 @@ function populateFields(storyInfo){
 		var partInfo = parts["part" + i];
 		var author = partInfo["author"];
 		var text = partInfo["text"];
-		var authorElem = document.createElement("h4");
+		var authorElem = document.createElement("h2");
 		authorElem.innerHTML = author;
+		authorElem.class = "author";
 		var textElem = document.createElement("p");
 		textElem.innerHTML = text;
 		div.appendChild(authorElem);

@@ -79,6 +79,7 @@ function send(){
 			updates["users/" + recipient + "/inbox/" + id] = true;
 		}
 		database.ref().update(updates);
+		window.location.href = "inbox.html";
 	}
 }
 

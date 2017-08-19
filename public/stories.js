@@ -16,13 +16,18 @@ function load(){
 	welcome();
 	database.ref("stories").once("value").then(function(snap){
 		var stories = snap.val();
+		var atLeastOne = false;
 		for (var story_id in stories){
 			var story = stories[story_id];
-
 			if (story.published == true){
+				atLeastOne = true;
 				addStory(story_id);
 			}
 		}
+		if (!atLeastOne){
+			emptyMessage();
+		}
+
 	});
 }
 
@@ -46,4 +51,11 @@ function addStory(story_id){
 		inbox.appendChild(story);
 	});
 
+}
+
+function emptyMessage(){
+	var msg = document.createElement("p");
+	msg.innerHTML = "Looks like nobody has published any stories yet!";
+	var body = document.getElementById("body");
+	body.appendChild(msg);
 }

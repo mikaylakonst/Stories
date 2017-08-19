@@ -21,6 +21,10 @@ function load(){
 				addStory(story_id);
 			}
 		}
+		var inboxCount = Object.keys(inbox).length - 1; // minus 1 for the hack
+		if (inboxCount == 0){
+			emptyMessage();
+		}
 	});
 }
 
@@ -43,5 +47,11 @@ function addStory(story_id){
 		var inbox = document.getElementById("inbox");
 		inbox.appendChild(story);
 	});
+}
 
+function emptyMessage(){
+	var msg = document.createElement("p");
+	msg.innerHTML = "Looks like nobody has sent you anything yet!";
+	var body = document.getElementById("body");
+	body.appendChild(msg);
 }

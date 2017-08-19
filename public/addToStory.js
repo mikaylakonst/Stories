@@ -85,5 +85,6 @@ function send(){
 			updates["users/" + recipient + "/inbox/" + story_id] = true;
 		}
 		database.ref().update(updates);
+		window.location.href = "inbox.html";
 	}
 }

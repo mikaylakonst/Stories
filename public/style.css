@@ -1,8 +1,55 @@
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 20px;
+}
+
 li {
 	cursor: pointer; 
-
+	text-align: left;
 }
 
 li:hover {
-	background-color: pink;
+	background-color: #1d518c;
+}
+
+.topnav {
+	background-color: #1d518c;
+	text-align: center;
+	border-style: groove;
+	border-width: 5px;
+	border-color: black;
+}
+
+.latest {
+	background-color: #1d518c;
+}
+
+.topnav a {
+	font-size: 24px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+.topnav a:hover {
+	color: white;
+}
+
+.topnav a.active {
+	background-color: black;
+	color: #1d518c;
+	border-radius: 50%;
+}
+
+body {
+	text-align: center;
+	background-color: #afb4bc;
+}
+
+button {
+	background-color: #1d518c;
+	border: none;
+	border-radius: 50%;
 }
