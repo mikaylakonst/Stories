@@ -1,12 +1,12 @@
 // Initialize Firebase
 var config = {
-	apiKey: "AIzaSyDVRoOY_co7rwoBNDrv-C8P46CBanGNF_A",
-	authDomain: "stories-b94e7.firebaseapp.com",
-	databaseURL: "https://stories-b94e7.firebaseio.com",
-	projectId: "stories-b94e7",
-	storageBucket: "stories-b94e7.appspot.com",
-	messagingSenderId: "967741365555"
-};
+    apiKey: "AIzaSyBd1iX35JTMk5rCeyit5tZJvRFAVlZRVF4",
+    authDomain: "storiescss.firebaseapp.com",
+    databaseURL: "https://storiescss.firebaseio.com",
+    projectId: "storiescss",
+    storageBucket: "storiescss.appspot.com",
+    messagingSenderId: "703100346548"
+  };
 firebase.initializeApp(config);
 var database = firebase.database();
 var currentUser;
@@ -35,6 +35,8 @@ function load(){
 		dropdown.appendChild(option);
 	});
 }
+
+//where is this sessionStorage variable coming from?
 
 function welcome(){
 	currentUser = sessionStorage.user;
