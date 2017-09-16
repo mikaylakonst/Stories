@@ -1,16 +1,37 @@
+:root {
+    --inside-color: #afb4bc;
+    --outside-color:#1d518c; /* #456D9A; */
+}
+
 ul {
 	list-style-type: none;
-	padding-left: 0;
-	font-size: 20px;
+	font-size: 22px;
+	padding-top: 50px;
+	display: inline;
+
 }
 
 li {
 	cursor: pointer; 
-	text-align: left;
+
+	border: 4px solid black;
+
+	border-radius: 10px;
+
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 li:hover {
-	background-color: #1d518c;
+	background-color: var(--inside-color);
 }
 
 .login {
@@ -26,51 +47,76 @@ li:hover {
 
 .login button {
 	font-size: 24px;
+	color: black;
+	padding: 10px;
 }
 
 marquee {
 	font-size: 130px;
+	color: white;
 }
 
 .topnav {
-	background-color: #1d518c;
+	background-color: var(--inside-color);
 	text-align: center;
-	border-style: groove;
-	border-width: 5px;
+	border-style: double;
+	border-width: 10px;
 	border-color: black;
+	border-radius: 10px;
+	padding-bottom: 15px;
+	margin-top: 15px;
+	margin-left: 100px;
+	margin-right: 100px;
+
 }
 
 .latest {
-	background-color: #1d518c;
+	background-color: var(--inside-color);
+	border-style: solid;
+
+	border-radius: 10px;
+	padding-bottom: 15px;
+	
+	margin-top: 15px;
+	margin-bottom: 25px;
+
+	margin-left: 230px;
+	margin-right: 230px;
 }
 
 .topnav a {
 	font-size: 24px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 10px;
 	text-decoration: none;
 	color: black;
+
+	margin-left: 15px;
+	margin-right: 15px;
+
+	font-family: Helvetica,Arial,sans-serif;
 }
 
 .topnav a:hover {
-	color: white;
+	color: var(--outside-color);
 }
 
 .topnav a.active {
 	background-color: black;
-	color: #1d518c;
+	color: var(--inside-color);
 	border-radius: 50%;
 }
 
 body {
 	text-align: center;
-	background-color: #afb4bc;
+	background-color: var(--outside-color);
 }
 
 button {
-	background-color: #1d518c;
+	background-color: var(--inside-color);
 	border: none;
 	border-radius: 50%;
+	color: black;
+	padding: 10px;
 }
 
 .nyan {
